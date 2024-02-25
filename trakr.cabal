@@ -113,15 +113,18 @@ test-suite trakr-test
     -- other-extensions:
 
     -- The interface type and version of the test suite.
-    type:             exitcode-stdio-1.0
+    type:             detailed-0.9
+
+    test-module:      Spec
 
     -- Directories containing source files.
     hs-source-dirs:   test
 
     -- The entrypoint to the test suite.
-    main-is:          Spec.hs
+    -- main-is:          Spec.hs
 
     -- Test dependencies.
     build-depends:
         base ^>=4.19.0.0,
+        Cabal^>=3.10.2.0,
         trakr
