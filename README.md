@@ -15,3 +15,9 @@ can be used as a standalone tool.
 - [ ] cli commands setup
 - [ ] JSON object lenses (from scratch)
 - [ ] group projects based on a tag (format: `tag:name-of-task`)
+
+## Test configuration
+
+```bash
+cabal configure --enable-tests
+```
